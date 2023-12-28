@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: hsl(47, 88%, 63%);
+    font-family: 'Poppins', sans-serif;
+}
+
+.contenedor {
+    width: 23%;
+    max-width: 100%;
+    height: 65%;
+    padding: 30px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-wrap: wrap;
+    border: 2px solid #000;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    border-radius: 25px;
+    box-shadow: #000 15px 15px 0px 0px;
+    transition: 1s ease;
+}
+
+.contenedor-interno {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    text-align: start;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contenedor-interno svg {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 25px;
+    border-radius: 20px;
+}
+
+.info {
+    width: 100%;
+    height: 100%;
+}
+
+.info a {
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 7px;
+    text-decoration: none;
+    transition: 0.6s ease;
+    background: hsl(47, 88%, 63%);
+}
+
+.info a:hover {
+    color: #fff;
+    background: hsl(47, 93%, 63%);;
+}
+
+.info p {
+    color: #000;
+    padding: 20px 0px;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: start;
+}
+
+.foundations {
+    width: 100%;
+    height: 100%;
+    padding: 0px 0px 20px;
+}
+
+.foundations h2 {
+    color: #000;
+    padding: 0px 0px 10px;
+    font-weight: 600;
+    text-align: start;
+}
+
+.foundations p {
+    color: #666161;
+    font-size: 16px;
+    text-align: start;
+}
+
+.avatar {
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.avatar img {
+    width: 50px;
+    height: 50px;
+}
+
+.avatar p {
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 13px;
+}
+
+@media only screen and (max-width: 768px) {
+    .contenedor-interno {
+      padding: 10px;
+    }
+  
+    .foundations,
+    .avatar {
+      margin-top: 10px;
+    }
+  }
+  
+
+  @media only screen and (max-width: 480px) {
+    .info {
+      font-size: 14px;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    p {
+      font-size: 0.9rem;
+    }
+  }
